@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <style>
+    body {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+      @keyframes sprite {
+        to { background-position: -8640px }
+      }
+      
+      .terminal {
+        height: 640px;
+        width: 980px;
+        background: url("https://i.imgur.com/zLh2Pgs.png");
+        animation: sprite 1.5s steps(6) infinite;
+        transform: translate(-25%, -25%) scale(0.5);
+      }
+      
+      @media only screen and (min-width: 1024px) {
+        .terminal {
+          transform: scale(1);
+        }
+      }
+    </style>
+<head>
+<title>CSS animations</title>
+</head>
+<body>
+    <div class="terminal"></div>
+</body>
+</html>
